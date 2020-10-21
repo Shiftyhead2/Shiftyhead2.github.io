@@ -1,0 +1,277 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.intro{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+h1{
+  color:#0066E3;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h3{
+  color:white;
+  font-size: 30px;
+  margin:25px;
+}
+
+footer{
+  color:gray;
+  text-align: center;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+}
+
+.intro-p{
+  color:white;
+  word-wrap: break-word;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color:white;
+}
+
+.brand-name{
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color:white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  background-color: #555;
+}
+
+.toggle-btn{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media(max-width: 632px){
+  .toggle-btn{
+    display: flex;
+  }
+  .navbar-links{
+    display:none;
+    width: 100%;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li{
+    text-align: center;
+  }
+
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active{
+    display:flex;
+  }
+}
+
+.bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.bio-p{
+  color:white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color:rgba(51, 51, 51, 0.267);
+  border-radius: .5rem;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.contact-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+.linkedin-logo{
+  height:96px;
+  width: 96px;
+  border-radius: 50%;
+  border: 4px solid #2867b2;
+  transition: 200ms;
+}
+
+
+
+
+.linkedin-logo:hover{
+  height: 106px;
+  width: 106px;
+  cursor: pointer;
+}
+
+
+
+.games-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.games-articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.article{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  padding-right: 50vh;
+  padding-left: 50vh;
+  margin-bottom: 15px;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+h2{
+  color:white;
+}
+
+.logo{
+  width: 170px;
+  height: 170px;
+  border-radius: 35%;
+  padding: 0px;
+  margin: 45px 45px 45px 45px;
+  border:3.5px solid white
+}
+
+.title{
+  color: #2782f1;
+  font-size: 25px;
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.worked-as{
+  margin: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.description{
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.link-github,
+.link-game{
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color:#408ce9;
+  border-radius: 1rem;
+  border-color: #0066E3;
+  transition: background-color 200ms;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+.link-github:hover,
+.link-game:hover{
+  background-color: #555;
+  cursor: pointer;
+  color:#3283e6;
+}
+
+h4{
+  color:white;
+}
