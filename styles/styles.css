@@ -59,7 +59,8 @@ footer{
   color:white;
   word-wrap: inherit;
   font-size: 25px;
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .navbar{
@@ -150,6 +151,11 @@ footer{
   .navbar-links.active{
     display:flex;
   }
+
+  .footer{
+    font-size: 5px;
+    background-attachment: scroll;
+  }
 }
 
 .bio{
@@ -229,14 +235,16 @@ footer{
   align-items: center;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .article{
   display: flex;
   justify-content: space-between;
   border: 2px solid white;
-  padding-right: 50vh;
-  padding-left: 50vh;
+  padding-left: 350px;
+  padding-right: 350px;
   margin-bottom: 15px;
   background-color: rgba(51, 51, 51, 0.3);
 }
