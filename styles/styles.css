@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 *{
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: black;
 }
@@ -14,18 +20,28 @@ body{
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1{
   color:#0066E3;
   font-weight: bold;
   font-size: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3{
   color:white;
   font-size: 30px;
   margin:25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 footer{
@@ -35,11 +51,13 @@ footer{
   background-position: 0% 0%;
   position: fixed;
   bottom: 0pt;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .intro-p{
   color:white;
-  word-wrap: break-word;
+  word-wrap: inherit;
   font-size: 25px;
   margin-left: 20px;
 }
@@ -50,22 +68,26 @@ footer{
   align-items: center;
   background-color: #333;
   color:white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .brand-name{
   font-size: 2rem;
   margin: .5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-links ul{
   margin: 0;
   padding: 0;
   display: flex;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 .navbar-links li{
   list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-links li a{
@@ -73,6 +95,7 @@ footer{
   color:white;
   padding: 1rem;
   display: block;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-links li:hover{
@@ -135,6 +158,7 @@ footer{
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bio-p{
@@ -145,6 +169,8 @@ footer{
   margin-right: 50px;
   background-color:rgba(51, 51, 51, 0.267);
   border-radius: .5rem;
+  width: 95%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact{
@@ -153,6 +179,7 @@ footer{
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-btn{
@@ -173,6 +200,12 @@ footer{
 }
 
 
+.email{
+  color: #2867b2;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-family: 'Roboto', sans-serif;
+}
 
 
 .linkedin-logo:hover{
@@ -195,6 +228,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
 
 .article{
@@ -215,6 +249,7 @@ footer{
 
 h2{
   color:white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo{
@@ -262,6 +297,8 @@ h2{
   transition: background-color 200ms;
   margin-right: 5px;
   margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 
