@@ -29,6 +29,7 @@ rgba(0,0,0,0.6) ) ,
   flex-direction: column;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 
 h1{
@@ -67,10 +68,12 @@ footer{
 
 .intro-p{
   color:white;
-  word-wrap: inherit;
-  font-size: 25px;
+  word-wrap: break-word;
+  font-size: 30px;
   margin-bottom: 500px;
   margin-top:50px;
+  margin-left:250px;
+  margin-right:250px;
 }
 
 .navbar{
@@ -199,6 +202,8 @@ rgba(0,0,0,0.6),
 rgba(0,0,0,0.6) ) ,
     url('https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   display: flex;
+  background-position: center;
+  background-size:cover;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -211,11 +216,72 @@ rgba(0,0,0,0.6) ) ,
   color:white;
   font-weight: bold;
   font-size: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  width: 95%;
+  word-wrap: break-word;
+  margin-right: 80px;
+  margin-top:100px;
+  margin-left:80px;
+  position: absolute;
+  top:250px;
+  left: -30px;
+  width: 35%;
+  height: 35%;
   font-family: 'Roboto', sans-serif;
+  text-align:justify;
+  vertical-align: middle;
 }
+
+.bio-title{
+  position:absolute;
+  word-wrap:break-word;
+  margin-right: 80px;
+  margin-left:80px;
+  top:175px;
+  left: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.skills-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  position:absolute;
+  top: -115px;
+  right:-50px;
+}
+
+.skills-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size:25px;
+  font-weight: bold;
+  text-align:justify;
+}
+
+.skills{
+  position:absolute;
+  top:250px;
+  right: 400px;
+  margin-right:50px;
+  margin-left:50px;
+}
+
+.skills-container li{
+  margin-top:15px;
+  margin-bottom:15px;
+  list-style:square;
+}
+
+.stars{
+  color:gold;
+}
+
+
 
 .contact{
   background: linear-gradient(
