@@ -39,9 +39,7 @@ h1{
   font-family: 'Roboto', sans-serif;
 }
 
-.welcome-title {
-  margin-top: 150px;
-}
+
 
 h3{
   color:white;
@@ -66,6 +64,15 @@ footer{
   font-family: 'Roboto', sans-serif;
 }
 
+.welcome-title {
+  margin-top: 150px;
+  opacity:0;
+}
+
+.welcome-subtitle{
+  opacity:0;
+}
+
 .intro-p{
   color:white;
   word-wrap: break-word;
@@ -74,6 +81,7 @@ footer{
   margin-top:50px;
   margin-left:250px;
   margin-right:250px;
+  opacity:0;
 }
 
 .navbar{
@@ -194,6 +202,14 @@ footer{
   }
 }
 
+@keyframes fadein{
+  from{
+    opacity:0;
+  }to{
+    opacity:1;
+  }
+}
+
 
 
 .bio{
@@ -210,6 +226,7 @@ rgba(0,0,0,0.6) ) ,
   font-family: 'Roboto', sans-serif;
   width: 99.1vw;
   height: 100vh;
+  opacity:0;
 }
 
 .bio-p{
@@ -228,6 +245,7 @@ rgba(0,0,0,0.6) ) ,
   font-family: 'Roboto', sans-serif;
   text-align:justify;
   vertical-align: middle;
+  opacity:0;
 }
 
 .bio-title{
@@ -275,6 +293,7 @@ rgba(0,0,0,0.6) ) ,
   margin-top:15px;
   margin-bottom:15px;
   list-style:square;
+  opacity:0;
 }
 
 .stars{
