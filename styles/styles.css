@@ -285,8 +285,8 @@ rgba(0,0,0,0.6) ) ,
 
 .contact{
   background: linear-gradient(
-rgba(0,0,0,0.6),
-rgba(0,0,0,0.6) ) ,
+rgba(0,0,0,0.8),
+rgba(0,0,0,0.8) ) ,
     url('https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
   background-position: center;
   background-size:cover;
@@ -318,10 +318,10 @@ rgba(0,0,0,0.6) ) ,
 
 
 .email{
-  color: white;
+  color: #00FFFF;
   text-decoration: underline;
   text-underline-offset: 5px;
-  text-decoration-color: #0084ff;  
+  text-decoration-color: #00FFFF;  
   text-decoration-style: thick;  
   margin-right: 100px;
   margin-left: 100px;
