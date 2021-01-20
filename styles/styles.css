@@ -143,7 +143,7 @@ footer{
   border-radius: 10px;
 }
 
-@media(max-width: 632px){
+@media(max-width: 638px){
   .toggle-btn{
     display: flex;
     cursor:pointer;
@@ -185,7 +185,7 @@ footer{
 @keyframes navLinksFade{
   from{
     opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(50px);
   }to{
     opacity: 1;
     transform: translateX(0px);
@@ -323,9 +323,14 @@ rgba(0,0,0,0.8) ) ,
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  opacity:0;
 }
 
-
+.contact-text1,
+.contact-text2,
+.contact-title{
+  opacity:0;
+}
 
 .linkedin-logo{
   height:96px;
@@ -345,6 +350,7 @@ rgba(0,0,0,0.8) ) ,
   margin-right: 100px;
   margin-left: 100px;
   font-family: 'Roboto', sans-serif;
+  opacity:0;
 }
 
 
@@ -387,7 +393,7 @@ rgba(0,0,0,0.6) ) ,
   padding-left: 350px;
   padding-right: 350px;
   margin-bottom: 15px;
-  background-color: rgba(14, 22, 14, 0.8);
+  background-color: rgba(9, 14, 9, 0.25);
   opacity: 0;
 }
 
@@ -403,8 +409,8 @@ h2{
 }
 
 .logo{
-  width: 170px;
-  height: 170px;
+  width: 185px;
+  height: 185px;
   border-radius: 35%;
   padding: 0px;
   margin: 45px 45px 45px 45px;
@@ -437,8 +443,8 @@ h2{
 
 .link-github,
 .link-game{
-  width: 100px;
-  height: 50px;
+  width: 135px;
+  height: 55px;
   margin-bottom: 10px;
   background-color: transparent;
   color: rgb(191, 233, 191);
@@ -451,6 +457,20 @@ h2{
   font-weight: bold;
 }
 
+.link-game{
+  position: absolute;
+  right:100.72px;
+  top:85px;
+  margin-top:15px;
+}
+
+.link-github{
+  position: absolute;
+  right:100.72px;
+  margin-top:15px;
+  top:145px;
+}
+
 
 .link-github:hover,
 .link-game:hover{
@@ -458,6 +478,13 @@ h2{
   cursor: pointer;
   color:rgb(204, 241, 204);
 }
+
+.games-title,
+.games-text1,
+.games-text2{
+  opacity:0;
+}
+
 
 
 h4{
