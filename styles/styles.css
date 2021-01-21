@@ -373,6 +373,7 @@ rgba(0,0,0,0.6) ) ,
   justify-content: center;
   align-items: center;
   flex-direction: column; 
+  z-index:-1;
 }
 
 
@@ -414,7 +415,7 @@ h2{
   border-radius: 35%;
   padding: 0px;
   margin: 45px 45px 45px 45px;
-  border:3.5px solid rgb(16, 44, 13);
+
 }
 
 .title{
