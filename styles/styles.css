@@ -108,6 +108,8 @@ footer{
 .navbar-links li{
   list-style: none;
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  transition:background-color .3s;
   opacity: 0;
 }
 
@@ -120,7 +122,22 @@ footer{
 }
 
 .navbar-links li:hover{
-  background-color: #555;
+  background-color: rgba(61, 61, 61, 1);
+  transition:background-color .3s;
+}
+
+.cool-link::after{
+  content:'';
+  display:block;
+  width:0;
+  height: 2px;
+  background:white;
+  transition: width .3s;
+}
+
+.cool-link:hover::after{
+  width:100%;
+  transition: width .3s;
 }
 
 .toggle-btn{
@@ -335,7 +352,7 @@ rgba(0,0,0,0.8) ) ,
   width: 96px;
   border-radius: 50%;
   border: 4px solid #2867b2;
-  transition: 200ms;
+  transition: .5s;
 }
 
 
@@ -356,14 +373,15 @@ rgba(0,0,0,0.8) ) ,
   height: 106px;
   width: 106px;
   cursor: pointer;
+  transform: .5s;
 }
 
 
 
 .games-intro{
   background: linear-gradient(
-rgba(0, 0, 0, 0.75),
-rgba(0,0,0,0.75) ) ,
+rgba(0, 0, 0, 0.65),
+rgba(0,0,0,0.65) ) ,
     url('https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size:cover;
@@ -388,13 +406,36 @@ rgba(0,0,0,0.75) ) ,
 .article{
   display: flex;
   justify-content: space-between;
-  border: 2px solid rgb(30, 77, 26);
   padding-left: 350px;
   padding-right: 350px;
-  margin-bottom: 15px;
-  background-color: rgba(9, 14, 9, 0.35);
-  opacity: 0;
+  margin-bottom: 50px;
+  opacity:0;
 }
+
+.article::before{
+  content:"";
+  position: absolute;
+  top:-5px;
+  left: -5px;
+  right:-5px;
+  bottom:-5px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index:-1;
+}
+
+.article::after{
+  content:"";
+  position: absolute;
+  top:-5px;
+  left: -5px;
+  right:-5px;
+  bottom:-5px;
+  background: rgba(14, 161, 1, 0.35);
+  z-index:-2;
+  filter:blur(25px);
+}
+
+
 
 .content{
   display: flex;
@@ -447,14 +488,20 @@ h2{
   height: 55px;
   margin-bottom: 10px;
   background-color: transparent;
-  color: rgb(191, 233, 191);
+  color: rgb(255, 255, 255);
   border-radius: 1rem;
   border-color: rgb(30, 77, 26);
-  transition: background-color 200ms;
+  transition: .5s;
   margin-right: 5px;
   margin-left: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size:12px;
+}
+
+.link-github,
+.link-game:focus{
+  outline:none;
 }
 
 .link-game{
@@ -468,15 +515,21 @@ h2{
   position: absolute;
   right:100.72px;
   margin-top:15px;
-  top:145px;
+  top:155px;
 }
+
 
 
 .link-github:hover,
 .link-game:hover{
-  background-color: rgb(27, 44, 27);
+  width: 145px;
+  height: 65px;
+  background-color: rgb(18, 36, 18);
   cursor: pointer;
-  color:rgb(204, 241, 204);
+  color:rgb(255, 255, 255);
+  transition: .5s;
+  font-size:14px;
+  font-weight: bolder;
 }
 
 .games-title,
