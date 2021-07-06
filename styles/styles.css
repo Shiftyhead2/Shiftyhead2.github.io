@@ -25,7 +25,7 @@ rgba(0,0,0,0.6) ) ,
   background-position: center;
   background-size:cover;
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -64,7 +64,6 @@ footer{
 }
 
 .welcome-title {
-  margin-top: 150px;
   opacity:0;
 }
 
@@ -76,11 +75,10 @@ footer{
   color:white;
   word-wrap: break-word;
   font-size: 30px;
-  margin-bottom: 500px;
-  margin-top:50px;
   margin-left:250px;
   margin-right:250px;
   opacity:0;
+  margin-bottom:350px;
 }
 
 .navbar{
@@ -159,7 +157,7 @@ footer{
   border-radius: 10px;
 }
 
-@media(max-width: 638px){
+@media(max-width: 900px){
   .toggle-btn{
     display: flex;
     cursor:pointer;
@@ -635,4 +633,269 @@ rgba(0,0,0,0.65) ) ,
 
 h4{
   color:white;
+}
+
+@media (max-width: 900px){
+  .welcome-title{
+    font-size:45px;
+  }
+
+  .welcome-subtitle{
+    font-size: 35px;
+  }
+
+  .intro-p{
+    font-size:25px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 550px;
+  }
+
+  .container{
+    flex-direction:column;
+  }
+
+  .bio{
+    width:100%;
+    margin:0;
+    margin-top:100px;
+  }
+
+  .bio-p{
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  .bio-title{
+    font-size: 45px;
+  }
+
+  .skills-title{
+    font-size:45px;
+    margin-right:0;
+  }
+
+  .skills-sides{
+    margin:0;
+  }
+
+  .skills-sides ul{
+    margin:0;
+    font-size: 20px;
+  }
+
+  .article{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .title{
+    font-size:25px;
+  }
+
+  .games-title{
+    font-size:45px;
+  }
+
+  .games-text1{
+    font-size:25px;
+  }
+
+  .worked-as{
+    font-size: 15px;
+    margin-top:15px;
+  }
+
+  .description{
+    font-size:15px;
+  }
+
+  .logo{
+    width: 92.5px;
+    height:92.5px;
+  }
+
+  .link-game{
+    right:45px;
+    top:45px;
+    margin-top:15px;
+  }
+  
+  .link-github{
+    right:45px;
+    margin-top:15px;
+    top:125px;
+  }
+
+  .link-game,
+  .link-github{
+    width:77.5px;
+    font-size:12px;
+  }
+
+  .contact{
+    font-size:45px;
+  }
+
+  .contact-text1,
+  .email,
+  .contact-text2{
+    font-size:25px;
+  }
+
+  .linkedin-logo{
+    height:86px;
+    width: 86px;
+  }
+
+
+}
+
+@media (max-width: 800px){
+  .welcome-title{
+    font-size:35px;
+  }
+
+  .welcome-subtitle{
+    font-size: 25px;
+  }
+
+  .intro-p{
+    font-size:20px;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 550px;
+  }
+
+  .bio-p{
+    font-size: 18px;
+  }
+
+  .bio-title{
+    font-size: 35px;
+  }
+
+  .skills-title{
+    font-size:35px;
+  }
+
+  
+
+  .skills-sides ul{
+    font-size: 20px;
+  }
+
+  .games-title{
+    font-size:35px;
+  }
+
+  .games-text1{
+    font-size:20px;
+  }
+
+  .contact{
+    font-size:35px;
+  }
+
+  .contact-text1,
+  .email,
+  .contact-text2{
+    font-size:20px;
+  }
+
+  .linkedin-logo{
+    height:76px;
+    width: 76px;
+  }
+}
+
+@media (max-width: 642px){
+  .bio-p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 618px){
+  .welcome-title{
+    font-size:25px;
+  }
+
+  .welcome-subtitle{
+    font-size: 15px;
+  }
+
+  .intro-p{
+    font-size:15px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 550px;
+  }
+
+  .games-title{
+    font-size:25px;
+  }
+
+  .games-text1{
+    font-size:15px;
+  }
+
+  .article{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .logo{
+    width: 46.25px;
+    height:46.25px;
+  }
+
+  .title{
+    font-size:15px;
+  }
+
+  .worked-as{
+    font-size: 12px;
+    margin-top:15px;
+  }
+
+  .description{
+    font-size:12px;
+  }
+
+  .link-game{
+    right:25px;
+    top:45px;
+    margin-top:15px;
+  }
+  
+  .link-github{
+    right:25px;
+    margin-top:15px;
+    top:100px;
+    
+  }
+
+  .link-game,
+  .link-github{
+    width:55px;
+    height:50px;
+    font-size:10px;
+  }
+
+  .contact{
+    font-size:25px;
+  }
+
+  .contact-text1,
+  .email,
+  .contact-text2{
+    font-size:15px;
+  }
+
+  .linkedin-logo{
+    height:66px;
+    width: 66px;
+  }
 }
