@@ -833,6 +833,28 @@ h4{
     margin-bottom:0;
   }
 
+  .bio-p{
+    font-size: 12px;
+  }
+
+  .bio-title{
+    font-size: 20px;
+  }
+
+  .skills-title{
+    font-size:20px;
+  }
+
+  
+
+  .skills-sides ul{
+    font-size: 12px;
+  }
+
+  .stars{
+    font-size:12px;
+  }
+
   .games-title{
     font-size:25px;
   }
@@ -897,5 +919,23 @@ h4{
   .linkedin-logo{
     height:66px;
     width: 66px;
+  }
+}
+
+@media (max-width:450px){
+  .contact{
+    font-size:13px;
+    font-weight: lighter;
+  }
+
+  .contact-text1,
+  .email,
+  .contact-text2{
+    font-size:12px;
+  }
+
+  .linkedin-logo{
+    height:46px;
+    width: 46px;
   }
 }
