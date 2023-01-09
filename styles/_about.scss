@@ -1,0 +1,177 @@
+
+.about{
+  @extend %header-container;
+  h2,
+  p,
+  li{
+    color:$white;
+  }
+
+
+  
+
+  h2{
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  @include laptop{
+    h2{
+      font-size: 3.5rem;
+    }
+  }
+
+  @include tablet{
+    width: 100%;
+    h2{
+      font-size: 3rem;
+    }
+  }
+
+  @include tablet-sm{
+    h2{
+      font-size: 2.5rem;
+    }
+  }
+
+  @include mobile-lg{
+    h2{
+      font-size: 2rem;
+    }
+  }
+
+  &__container{
+    @extend %about-container;
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap:2.5rem;
+    h2{
+      font-size: 2rem;
+      text-align: start;
+      color: $green;
+    }
+
+    p{
+      font-size:1.5rem;
+    }
+
+    li{
+      list-style: none;
+      font-size: 1.2rem;
+    }
+
+    @include laptop{
+      li{
+        font-size: 1rem;
+      }
+
+      p{
+        font-size: 1.2rem;
+      }
+
+      h2{
+        font-size: 1.5rem;
+      }
+    }
+
+    @include tablet{
+      li{
+        font-size: 0.8rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
+
+      h2{
+        font-size: 1.2rem;
+      }
+    }
+
+    @include tablet-sm{
+      li{
+        font-size: 0.75rem;
+      }
+
+      p{
+        font-size: 0.8rem;
+      }
+
+      h2{
+        font-size: 1rem;
+      }
+    }
+
+    @include mobile-lg{
+
+      p{
+        font-size: 0.75rem;
+      }
+
+      h2{
+        font-size: 1rem;
+      }
+    }
+
+    &--biography{
+      p{
+        margin-left: 1rem;
+      }
+    }
+    
+    &--skills{
+
+      
+      
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap:10rem;
+        background-color: $darkgray;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+
+        li{
+          &>i:nth-child(1){
+            color:$red;
+          }
+          &>i:nth-child(2){
+            color:$orange;
+          }
+          &>i:nth-child(3){
+            color:$yellow;
+          }
+        }
+      }
+
+
+      @include laptop{
+        ul{
+          gap:5rem;
+        }
+      }
+
+      @include tablet{
+        ul{
+          gap:1.5rem;
+        }
+      }
+
+      @include tablet-sm{
+        ul{
+          gap:1rem;
+        }
+      }
+
+      @include mobile-lg{
+        ul{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+
+}

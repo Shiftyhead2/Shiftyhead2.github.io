@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anton Rajković - portfolio</title>
+    <link rel="stylesheet" href="styles/fullpage.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a27905510a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="./scripts/fullpage.min.js"
+      defer
+    ></script>
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <nav>
+          <ul id="headerMenu">
+            <li data-menuanchor="page1"><a href="#page1">Welcome</a></li>
+            <li data-menuanchor="page2"><a href="#page2">About me</a></li>
+            <li data-menuanchor="page3"><a href="#page3">Projects</a></li>
+            <li data-menuanchor="page4"><a href="#page4">Other projects</a></li>
+            <li data-menuanchor="page5"><a href="#page5">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <div class="section main" data-anchor="page1">
+        <div class="main__container">
+          <h1>Welcome<span>!</span></h1>
+          <h2>Inspired game developer <span>/</span> front end developer</h2>
+          <p>
+            Welcome to my portfolio. I invite you to explore my site for a
+            better undestanding of my professional experience. What you’ll find
+            here is personal passion projects I have worked on. Enjoy browsing.
+          </p>
+          <div class="main__container--buttons">
+            <a href="#page2"><i class="fa-solid fa-user"></i> About me</a>
+            <a href="#page3"><i class="fa-solid fa-file-code"></i> Projects</a>
+            <a href="#page4"
+              ><i class="fa-solid fa-sitemap"></i> Other projects</a
+            >
+            <a href="#page5"><i class="fa-solid fa-briefcase"></i> Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="section about" data-anchor="page2">
+        <h2>About me</h2>
+        <div class="about__container">
+          <div class="about__container--biography">
+            <h2>Biography:</h2>
+            <p>
+              My name is Anton Rajković. I am 22 years old and I live in
+              Sisak,Croatia. I have graduated from high school Gimnazija Sisak
+              and finished Algebra's front end developer course. My huge passion
+              for video games inspired me to start learning programming. My
+              journey began in 2012 when I started learning Python. From 2012 to
+              present day I have created and published many games and passion
+              projects with various programming languages and engines. All my
+              work can be seen in this portfolio.
+            </p>
+          </div>
+          <div class="about__container--skills">
+            <div class="skills__container">
+              <ul>
+                <li>
+                  React:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+                <li>
+                  HTML:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+                <li>
+                  CSS:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+                <li>
+                  JS:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+                <li>
+                  Unity:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+                <li>
+                  C#:<i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section projects" data-anchor="page3">
+        <h2>Projects</h2>
+        <p>
+          Here you will find some of my projects that have both a website and a
+          github code for them!
+        </p>
+        <div class="projects__container--slideshow">
+          <div class="project" id="main-projects">
+            <div class="project--header">
+              <h3>Chatbuddy</h3>
+              <img
+                data-src="./img/program-icons/ChatBuddy-ReactJS.PNG"
+                alt="Chatbuddy logo"
+              />
+            </div>
+            <div class="project--description">
+              <p>
+                A fully functional chat app made with ReactJS,stylized with
+                tailwind css and that uses firebase as it's backend. Users can
+                login and register and then create or view messages.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://github.com/Shiftyhead2/chatBuddy">
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+                <a href="https://chatbuddy-reactjs.netlify.app/">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="main-projects">
+            <div class="project--header">
+              <h3>Dead Desert Z</h3>
+              <img
+                data-src="./img/games-icons/dead-desert-z-logopng.png"
+                alt="Dead Desert Z logo"
+              />
+            </div>
+            <div class="project--description">
+              <p>
+                When a sandstorm awakens an Egyptian ancient curse who will save
+                the day? None other than you. Dead Desert Z is a FPS single
+                player action game where you use 4 guns to defeat a zombie horde
+              </p>
+              <div class="project--description__buttons">
+                <a
+                  href="https://github.com/Shiftyhead2/LevelDesignDZ--Anton-Rajkovi-"
+                >
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+                <a href="https://shiftyhead.itch.io/dead-desert-z">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="main-projects">
+            <div class="project--header">
+              <h3>Playdev</h3>
+              <img
+                data-src="./img/games-icons/playdev-icon.png"
+                alt="Playdev icon"
+              />
+            </div>
+            <div class="project--description">
+              <p>
+                Create games of your dreams. Sequels to already existing games
+                or new original ideas. You can create anything you want in
+                PlayDev from action game to puzzle games. Name your games, set
+                their genre, sub genre and theme and you are ready to go.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://github.com/Shiftyhead2/Playdev">
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.GamesAreFun.PlayDev"
+                >
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="main-projects">
+            <div class="project--header">
+              <h3>No Honor</h3>
+              <img
+                data-src="./img/games-icons/no-honor-logo.png"
+                alt="No Honor"
+              />
+            </div>
+            <div class="project--description">
+              <p>
+                You awaken in a weird world void of life or anything. A voice
+                taunts you and you see shadow beings coming to kill you. Fight
+                in order to discover what happened to you and why are you in
+                this place in the first place.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://github.com/Shiftyhead2/No-Honor">
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+                <a href="https://shiftyhead.itch.io/no-honor">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="main-projects">
+            <div class="project--header">
+              <h3>PersonalBlogs</h3>
+              <img
+                data-src="./img/program-icons/PersonalBlog-VUEJS.PNG"
+                alt="PersonalBlogs logo"
+              />
+            </div>
+            <div class="project--description">
+              <p>
+                A fully functional blog website made with VUEjs that uses
+                firebase as it's backend. Users can login and register and then
+                create or view posts or edit their own profile details.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://github.com/Shiftyhead2/blog">
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+                <a href="https://personalblog-60d5b.web.app/">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a id="prev" onclick="show_slide(-1,false)">&#10094;</a>
+          <a id="next" onclick="show_slide(1,false)">&#10095;</a>
+
+          <div class="dots">
+            <span class="dot main-dot" onclick="show_slide(0,true)"></span>
+            <span class="dot main-dot" onclick="show_slide(1,true)"></span>
+            <span class="dot main-dot" onclick="show_slide(2,true)"></span>
+            <span class="dot main-dot" onclick="show_slide(3,true)"></span>
+            <span class="dot main-dot" onclick="show_slide(4,true)"></span>
+          </div>
+        </div>
+      </div>
+      <div class="section projects" data-anchor="page4">
+        <h2>Other projects</h2>
+        <p>
+          Here you will find some of my other projects that only have a github
+          page or a webpage!
+        </p>
+        <div class="projects__container--slideshow">
+          <div class="project" id="other-projects">
+            <div class="project--header">
+              <h3><i class="fa-regular fa-folder"></i>Deja Vu</h3>
+            </div>
+            <div class="project--description">
+              <p>
+                Deja Vu is a result of a one-day gamejam. It is a
+                horror-inspired puzzle-adventure game about a guy who is trapped
+                inside a house. Featuring: six puzzle based levels, creepy
+                atmosphere, one secret ending.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://imt-rexx.itch.io/deja-vu">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="other-projects">
+            <div class="project--header">
+              <h3><i class="fa-regular fa-folder"></i>Space Oddity</h3>
+            </div>
+            <div class="project--description">
+              <p>
+                Space Oddity is a result of a global game jam. It is a 2.5D
+                cooperative platformer about friendships. Two astronaunts are
+                tasked to repair a space ship so they can go to Mars together.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://globalgamejam.org/2020/games/dull-duck-1">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="other-projects">
+            <div class="project--header">
+              <h3><i class="fa-regular fa-folder"></i>Occupation</h3>
+            </div>
+            <div class="project--description">
+              <p>
+                The year is 2400. Planet Earth has been destroyed by CO2
+                emmision and pollution. Nobody can live on it. Everything died.
+                Humans have been forced to move into other planets of the Solar
+                System.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://shiftyhead.itch.io/occupation-game">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="other-projects">
+            <div class="project--header">
+              <h3><i class="fa-regular fa-folder"></i> The Perfect Game</h3>
+            </div>
+            <div class="project--description">
+              <p>
+                You have 5 minutes to create a game. Let the correct elements
+                pass to their containers to add to the score, but be carefull
+                because bugs are coming and you must not let them reach any of
+                the containers or they will reduce your score.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://shiftyhead.itch.io/the-perfect-game">
+                  <i class="fa-solid fa-globe"></i>Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project" id="other-projects">
+            <div class="project--header">
+              <h3><i class="fa-regular fa-folder"></i> Github projects</h3>
+            </div>
+            <div class="project--description">
+              <p>
+                Many of my other examples of projects that do not have a
+                dedicated website can be found on my github linked below. This
+                includes projects made in other languages, games made with other
+                languages etc.
+              </p>
+              <div class="project--description__buttons">
+                <a href="https://github.com/Shiftyhead2?tab=repositories">
+                  <i class="fa-brands fa-github"></i>Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a style="top: 33%" id="prev" onclick="show_slide_other(-1,false)"
+            >&#10094;</a
+          >
+          <a style="top: 33%" id="next" onclick="show_slide_other(1,false)"
+            >&#10095;</a
+          >
+
+          <div class="dots">
+            <span
+              class="dot other-dot"
+              onclick="show_slide_other(0,true)"
+            ></span>
+            <span
+              class="dot other-dot"
+              onclick="show_slide_other(1,true)"
+            ></span>
+            <span
+              class="dot other-dot"
+              onclick="show_slide_other(2,true)"
+            ></span>
+            <span
+              class="dot other-dot"
+              onclick="show_slide_other(3,true)"
+            ></span>
+            <span
+              class="dot other-dot"
+              onclick="show_slide_other(4,true)"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="section contact" data-anchor="page5">
+        <div class="contact_container">
+          <h2>Contact</h2>
+          <div class="contact_container--info">
+            <div class="info--right">
+              <h3>Business information</h3>
+              <p>
+                <i class="fa-solid fa-envelope"></i>Email:
+                antonrajkovic2@gmail.com
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>Phone number: +385 095 522 3750
+              </p>
+            </div>
+            <div class="info--left">
+              <h3>Social media</h3>
+              <a href="https://www.linkedin.com/in/anton-rajkovi%C4%87/"
+                ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
