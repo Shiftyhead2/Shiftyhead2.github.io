@@ -161,12 +161,7 @@
 
       @include tablet-sm{
         ul{
-          gap:1rem;
-        }
-      }
-
-      @include mobile-lg{
-        ul{
+          gap: 1rem;
           flex-direction: column;
         }
       }

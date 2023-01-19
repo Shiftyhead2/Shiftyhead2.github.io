@@ -10,7 +10,7 @@ header{
   }
 
   @include mobile-lg{
-    height: 2rem;
+    height: 3rem;
   }
 
   .header__container{
@@ -75,12 +75,13 @@ header{
 
     @include mobile-lg{
       ul{
-        padding-top: 0rem;
+        justify-content: center;
+        padding-top: 0.5rem;
         gap:1rem;
       }
 
       a{
-        font-size:0.6rem;
+        font-size:0.65rem;
       }
     }
 
