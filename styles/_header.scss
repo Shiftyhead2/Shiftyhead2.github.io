@@ -1,0 +1,91 @@
+header{
+  background-color: $darkgray;
+  border-bottom: 2px solid $green;
+  position: sticky;
+  height:5rem;
+  z-index: 1;
+
+  @include tablet-sm{
+    height:3rem;
+  }
+
+  @include mobile-lg{
+    height: 3rem;
+  }
+
+  .header__container{
+    @extend %header-container;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 1.5rem;
+      align-items: center;
+      gap:2rem;
+    }
+    li{
+      list-style: none;
+    }
+
+    .active{
+      a{
+        color: $green;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: $white;
+      font-size: 1.5rem;
+      transition: color 300ms ease-in-out;
+
+      &:hover{
+        color:$hover;
+      }
+    }
+
+    @include laptop{
+      a{
+        font-size: 1.2rem;
+      }
+    }
+
+    @include tablet{
+
+      ul{
+        gap:1.5rem;
+      }
+
+      a{
+        font-size: 1rem;
+      }
+    }
+
+    @include tablet-sm{
+
+      ul{
+        padding-top: 0.5rem;
+        gap:1rem;
+      }
+
+      a{
+        font-size: 0.8rem;
+      }
+    }
+
+    @include mobile-lg{
+      ul{
+        justify-content: center;
+        padding-top: 0.5rem;
+        gap:1rem;
+      }
+
+      a{
+        font-size:0.65rem;
+      }
+    }
+
+
+  }
+}
+

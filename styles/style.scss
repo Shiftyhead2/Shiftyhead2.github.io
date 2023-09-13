@@ -1,0 +1,19 @@
+@import "mediaQueries";
+@import "main";
+@import "header";
+@import "about";
+@import "projects";
+@import "contact";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+body{
+  background-color: $gray;
+}
